@@ -9,5 +9,5 @@ for((i=1;i<=$1;i+=1));
 do
     echo $i
     c='c'$i'.png'
-    wget https://projecteuler.net/captcha/show_captcha.php -O captchas/$c
+    wget -q https://projecteuler.net/captcha/show_captcha.php -O captchas/$c &
 done
