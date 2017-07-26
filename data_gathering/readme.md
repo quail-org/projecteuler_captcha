@@ -12,3 +12,11 @@ Relavent Links
 --------------
 
 * Go [here](https://projecteuler.net/captcha/show_captcha.php) to generate CAPTCHAS.
+
+Script Usage
+------------
+
+```
+# will create and fill a directory called captchas
+./fetchNumCaptchas.sh INSERT_NUM_CAPTCHAS
+```
