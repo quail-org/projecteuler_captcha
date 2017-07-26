@@ -1,10 +1,9 @@
 from PIL import Image
+import os
+import numpy as np
 
 dir = "../data_gathering/captchas/"
 
-imgpath = dir + "c0.png"
-
-im = Image.open(imgpath)
-
+fnames = np.sort([dir + f for f in os.listdir(dir)])
 
 
