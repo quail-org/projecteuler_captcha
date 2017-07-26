@@ -1,22 +1,22 @@
 Data Gathering
 ==============
 
-This section is for gathering data.
+This section deals with the needed tools that gather needed data for the main project. 
 
 Goals
 -----
 
-* Create a script that downloads CAPTCHAS (say 1000).
+* Create a script that downloads any given number of CAPTCHAS from projecteuler.net
 
 Relavent Links
 --------------
 
-* Go [here](https://projecteuler.net/captcha/show_captcha.php) to generate CAPTCHAS.
+* [CAPTCHA generator](https://projecteuler.net/captcha/show_captcha.php)
 
 Script Usage
-------------
+------------ 
+This script will create a directory called captchas where all the gathered captchas are going to be stored.
 
 ```
-# will create and fill a directory called captchas
 ./fetchNumCaptchas.sh INSERT_NUM_CAPTCHAS
 ```
