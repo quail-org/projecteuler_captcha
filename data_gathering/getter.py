@@ -44,8 +44,9 @@ def preDownloadCheck(toget, quantity, threads):
     if toget not in SOURCES:
         print ('There are no sources for {}. Exiting.'.format(toget))
         exit()
-    if not 4 >= int(threads) >= 1:
+    if not 1<= int(threads) <=100:
         print('Please insert a valid thread number 1<= thread <=3')
+        exit()
     threads = int(threads)
     if not os.path.exists(toget):
         os.makedirs(toget)
@@ -54,7 +55,6 @@ def preDownloadCheck(toget, quantity, threads):
     ranges = [0, increasigJobs]
 
     for numThread in range(threads):
-        print ranges
         thread.start_new_thread(startDownloads, (toget, ranges, numThread))
         ranges = [ranges[1], ranges[1]+increasigJobs]
 
