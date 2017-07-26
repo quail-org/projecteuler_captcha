@@ -1,2 +1,4 @@
-# projecteuler_captcha
-Automatically solving the CAPTCHAS from ProjectEuler.
+Project Euler CAPTCHA Solver
+============================
+
+This project aims to automatically fill in the CAPTCHAS on Project Eulers website.
