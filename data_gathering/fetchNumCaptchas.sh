@@ -16,4 +16,5 @@ do
 	c='c'$i'.png'
     fi
     wget -q https://projecteuler.net/captcha/show_captcha.php -O captchas/$c &
+    sleep .01
 done
